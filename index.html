@@ -4,41 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orion Initiative - Mission Control</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main id="mission-control">
+<body class="bg-white text-black min-h-screen flex items-center justify-center p-10">
 
-    <div class="asset-card" id="asset-phoenix">
-      <h3>Proyek Phoenix</h3>
-      <p>Misi: Rekonstruksi modul enkripsi dan pengujian red-team internal.</p>
-      <div class="asset-status">Status: Aktif</div>
+  <main id="mission-control" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full max-w-6xl">
+
+    <div class="relative flex flex-col p-4 min-h-[160px] border-2 border-[#555] box-border transition group">
+      <h3 class="text-lg font-semibold mb-2">Proyek Phoenix</h3>
+        <p class="text-sm">Misi: Rekonstruksi modul enkripsi dan pengujian red-team internal.</p>
+      <div class="mt-auto text-sm">Status: Aktif</div>
+
+      <div class="absolute inset-0 flex items-center justify-center bg-black/60 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        Buka Arsip Proyek
+      </div>
     </div>
 
-    <div class="asset-card" id="asset-hydra">
-      <h3>Proyek Hydra</h3>
-      <p>Misi: Integrasi multi-agent untuk pengumpulan intel. ETA: 3 bulan.</p>
-      <div class="asset-status">Status: Aktif</div>
+    <div class="relative flex flex-col p-4 min-h-[160px] border-2 border-[#555] box-border transition group">
+      <h3 class="text-lg font-semibold mb-2">Proyek Hydra</h3>
+        <p class="text-sm">Misi: Integrasi multi-agent untuk pengumpulan intel. ETA: 3 bulan.</p>
+      <div class="mt-auto text-sm">Status: Aktif</div>
+
+      <div class="absolute inset-0 flex items-center justify-center bg-black/60 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        Buka Arsip Proyek
+      </div>
     </div>
 
-    <div class="asset-card" id="priority-alpha">
-      <h3>Proyek Atlas — Prioritas Alpha</h3>
-      <p>Misi: Pengembangan prototipe sistem kendali otonom untuk uji coba lapangan.</p>
-      <div class="asset-status">Status: Aktif</div>
+    <div class="relative flex flex-col p-4 min-h-[160px] border-2 border-[#00FFFF] box-border transition group">
+      <h3 class="text-lg font-semibold mb-2">Proyek Atlas — Prioritas Alpha</h3>
+        <p class="text-sm">Misi: Pengembangan prototipe sistem kendali otonom untuk uji coba lapangan.</p>
+      <div class="mt-auto text-sm">Status: Aktif</div>
+
+      <div class="absolute inset-0 flex items-center justify-center bg-black/60 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        Buka Arsip Proyek
+      </div>
     </div>
 
-    <div class="asset-card" id="asset-orion">
-      <h3>Proyek Orion</h3>
-      <p>Misi: Analisis big-data untuk deteksi anomali operasional.</p>
-      <div class="asset-status">Status: Aktif</div>
+    <div class="relative flex flex-col p-4 min-h-[160px] border-2 border-[#555] box-border transition group">
+      <h3 class="text-lg font-semibold mb-2">Proyek Orion</h3>
+        <p class="text-sm">Misi: Analisis big-data untuk deteksi anomali operasional.</p>
+      <div class="mt-auto text-sm">Status: Aktif</div>
+
+      <div class="absolute inset-0 flex items-center justify-center bg-black/60 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        Buka Arsip Proyek
+      </div>
     </div>
 
-    <div class="asset-card" id="asset-cerberus">
-      <h3>Proyek Cerberus</h3>
-      <p>Misi: Validasi keamanan jaringan dan hardening lapisan transport.</p>
-      <div class="asset-status">Status: Aktif</div>
+    <div class="relative flex flex-col p-4 min-h-[160px] border-2 border-[#555] box-border transition group">
+      <h3 class="text-lg font-semibold mb-2">Proyek Cerberus</h3>
+        <p class="text-sm">Misi: Validasi keamanan jaringan dan hardening lapisan transport.</p>
+      <div class="mt-auto text-sm">Status: Aktif</div>
+
+      <div class="absolute inset-0 flex items-center justify-center bg-black/60 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        Buka Arsip Proyek
+      </div>
     </div>
 
   </main>
+
+  <style>
+    .group:hover {
+      border-color: #FF00FF !important;
+    }
+  </style>
+
 </body>
 </html>
